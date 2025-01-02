@@ -1,0 +1,1174 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&family=Exo:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&family=Exo:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-wrap: pretty;
+    /* border: 1px solid red; */
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: white;
+    /* font-family: "Roboto Condensed", sans-serif; */
+    font-optical-sizing: auto;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 0rem;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+p {
+    text-wrap: balance;
+}
+
+input,
+textarea,
+button {
+    font-family: inherit
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+    --primaryColor: #19274d;
+    --secondaryColor: #0095ff;
+    --darkColor: #330300;
+    --lightColor: #ff0f00;
+    --regularFont: 1.6rem;
+    --headingFont: 3rem;
+    --ffPrimary: "Poppins", serif;
+    --ffSecondary: "Open Sans", serif;
+    --fwPrimary: 600;
+    --fwSecondary: 400;
+}
+
+.align {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+.componentSpacing {
+    padding: 6rem 0;
+}
+
+.miniPad {
+    padding: 1rem;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid-21 {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+}
+
+.grid--2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid---2 {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+}
+
+.dflex-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.dflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dflex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.dflex-col-start {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+}
+
+/* /PARENT CONTAINER STARTS/  */
+header {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+}
+
+.heroContainer {
+    background-image: url(.//assets/images/banner_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 13rem;
+}
+
+.heroText {
+    padding-right: 50rem;
+}
+
+.heroText h1 {
+    color: white;
+    font-size: 5rem;
+    font-weight: 600;
+    font-family: var(--ffPrimary);
+    padding-bottom: 2rem;
+}
+
+.heroText p {
+    color: white;
+    font-family: var(--ffSecondary);
+    font-size: var(--regularFont);
+    font-weight: 400;
+    letter-spacing: 0.07rem;
+    line-height: 2.8rem;
+    padding-bottom: 4rem;
+}
+
+.heroText button {
+    padding: 1.3rem 3rem;
+    color: white;
+    font-weight: 600;
+    font-family: var(--ffPrimary);
+    font-size: var(--regularFont);
+    border-radius: 3rem;
+    background-color: transparent;
+    border: 0.22rem solid white;
+    cursor: pointer;
+}
+
+.heroText button:hover {
+    background-color: #0095ff;
+    border: none;
+    transition: 1s;
+}
+
+
+.serviceBody2,
+.serviceBody3,
+.serviceBody4 {
+    padding-top: 15rem;
+    gap: 3rem;
+}
+
+.serviceText h6 {
+    color: var(--secondaryColor);
+    font-size: 1.4rem;
+    font-family: var(--ffPrimary);
+    font-weight: var(--fwPrimary);
+    letter-spacing: 0.07rem;
+
+}
+
+.serviceText h2 {
+    color: var(--primaryColor);
+    font-size: var(--headingFont);
+    font-family: var(--ffPrimary);
+    font-weight: var(--fwPrimary);
+}
+
+.border1 {
+    height: 0.35rem;
+    width: 4rem;
+    background-color: var(--secondaryColor);
+    margin: 2rem 0;
+}
+
+.serviceText p,
+.digitalTextCol p {
+    color: var(--primaryColor);
+    font-family: var(--ffSecondary);
+    font-size: var(--regularFont);
+    font-weight: var(--fwSecondary);
+    letter-spacing: 0.07rem;
+    line-height: 2.8rem;
+}
+
+.digitalTextCol h3 {
+    font-size: 2.4rem;
+    font-family: var(--ffPrimary);
+    font-weight: var(--fwPrimary);
+    color: var(--primaryColor);
+    padding-bottom: 2rem;
+    line-height: 2.8rem;
+}
+
+.digitalTextCol li {
+    font-size: var(--regularFont);
+    font-family: var(--ffPrimary);
+    font-weight: var(--fwSecondary);
+    color: var(--primaryColor);
+    line-height: 2.8rem;
+    letter-spacing: 0.05rem;
+}
+
+.digitalTextCol a {
+    color: var(--secondaryColor);
+    font-size: var(--regularFont);
+    font-family: var(--ffPrimary);
+    font-weight: var(--fwPrimary);
+    text-decoration: none;
+}
+
+.digitalTextCol i {
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+
+}
+
+.digitalLink {
+    padding: 3rem 2rem;
+}
+
+.customerContainer {
+    background-color: black;
+}
+
+.customerBody {
+    gap: 10rem;
+}
+
+.customerTextCol {
+    text-align: start;
+}
+
+.customerTextCol h6 {
+    color: rgb(214, 214, 214);
+    font-family: var(--ffSecondary);
+    font-size: var(--regularFont);
+    font-weight: 300;
+    font-style: italic;
+}
+
+.customerTextCol h2 {
+    color: white;
+    font-size: var(--headingFont);
+    font-family: var(--ffPrimary);
+    font-weight: var(--fwPrimary);
+    padding: 1.5rem 0;
+
+}
+
+.customerTextCol p {
+    color: rgb(214, 214, 214);
+    font-family: var(--ffSecondary);
+    font-size: var(--regularFont);
+    font-weight: 400;
+    /* letter-spacing: 0.07rem; */
+    line-height: 2.8rem;
+    padding-bottom: 1.5rem;
+}
+
+.customerTextCol span {
+    padding-top: 2rem;
+    text-align: start;
+}
+
+.customerTextCol a {
+    color: var(--secondaryColor);
+    font-size: var(--regularFont);
+    font-family: var(--ffPrimary);
+    font-weight: var(--fwPrimary);
+    text-decoration: none;
+    text-align: start;
+}
+
+.customerTextCol i {
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+
+}
+
+.customerImageCol {
+    position: relative;
+}
+
+.customerImageCol img {
+    cursor: pointer;
+    aspect-ratio: 16/11;
+    width: 100%;
+}
+
+.customerImageCol i {
+    color: rgba(255, 255, 255, 0.616);
+    font-size: 5rem;
+    position: absolute;
+    top: 40%;
+    left: 43%;
+}
+
+
+.partnerBody2 {
+    padding: 7rem 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.partnerImageCol {
+    padding-bottom: 4rem;
+}
+
+.footerContainer {
+    background-color: #181819;
+}
+
+.footerService h6 {
+    color: white;
+    font-size: 1.4rem;
+    font-family: var(--ffPrimary);
+    font-weight: var(--fwPrimary);
+    padding-bottom: 2.5rem;
+
+}
+
+.footerService li {
+    color: rgb(153, 153, 153);
+    list-style-type: none;
+    font-size: 1.4rem;
+    font-family: var(--ffPrimary);
+    font-weight: 400;
+    letter-spacing: 0.07rem;
+    padding-bottom: 2rem;
+}
+
+.footerService li:hover {
+    color: white;
+}
+
+.footerService i {
+    color: #0095ff;
+    font-size: 1.1rem;
+    padding-right: 1rem;
+}
+
+
+.copyrightsCol p {
+    color: rgb(153, 153, 153);
+    font-size: 1.2rem;
+    font-family: var(--ffSecondary);
+
+}
+
+.footerBody1 {
+    padding: 8rem 0;
+}
+
+.copyrightsContainer {
+    background-color: #111111;
+}
+
+.copyrights {
+    padding: 3rem 0;
+}
+
+.copyrightsCol {
+    text-align: center;
+}
+
+.copyrightsCol a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0.07rem;
+    font-weight: 400;
+}
+
+.copyrightsCol a:hover {
+    color: #0095ff;
+}
+
+.navBar {
+    padding: 2rem 0;
+    background-color: white;
+}
+
+.navLinks {
+    padding-top: 1.3rem;
+}
+
+.menu li,
+a {
+    list-style-type: none;
+    text-decoration: none;
+    padding-left: 2rem;
+    font-family: var(--ffPrimary);
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    letter-spacing: 1px;
+}
+
+.menu a:hover {
+    color: #0095ff;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.home a {
+    color: #0095ff;
+}
+
+.future {
+    background-color: #f5fafe;
+
+}
+
+.Line1 {
+    font-family: var(--ffPrimary);
+    color: #0095ff;
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 3px;
+}
+
+.line2 {
+    color: rgb(25, 39, 77);
+    font-family: var(--ffPrimary);
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 1.5rem;
+}
+
+.line3 {
+    color: rgb(25, 39, 77);
+    font-family: var(--ffSecondary);
+    font-size: 17px;
+    padding-top: 2.5rem;
+    padding-bottom: 10rem;
+
+}
+
+.future {
+    padding: 8rem 16rem;
+}
+
+.futureimg img {
+    height: 60rem;
+    width: auto;
+}
+
+.threeCards {
+    padding: 0 4rem;
+}
+
+.line1 h3 {
+    color: rgb(25, 39, 77);
+    font-family: var(--ffPrimary);
+    font-size: 18px;
+    padding-bottom: 1.5rem;
+}
+
+.line1 p {
+    color: rgb(25, 39, 77);
+    font-family: var(--ffSecondary);
+    font-size: 16px;
+    padding-top: 2rem;
+}
+
+.para {
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+}
+
+.image img {
+    margin-right: 7rem;
+}
+
+.line {
+    height: 2.7px;
+    width: 4.3rem;
+    background-color: #dddddd;
+}
+
+.line:hover {
+    background-color: #04befc;
+}
+
+.lines {
+    height: 2.5px;
+    width: 4.3rem;
+    background-color: #0095ff;
+}
+
+
+
+
+/* /PARENT CONTAINER ENDS/ /RESPONSIVE DESIGN DEVICES/ /for responsive target the row code(display:grid)/ /Small devices(landscape phones, upto 576px and below)/ */
+@media(width <=576px) {
+
+    .grid-1,
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .heroContainer {
+        padding: 9rem 0;
+    }
+
+    .heroText {
+        padding-right: 0rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .customerBody {
+        gap: 0rem;
+        padding: 0 2rem;
+    }
+
+    .customerTextCol h6 {
+        letter-spacing: 0.05rem;
+        font-weight: 400;
+    }
+
+    .customerTextCol p {
+        letter-spacing: 0.05rem;
+        font-weight: 400;
+    }
+
+    .footerLogo {
+        padding-bottom: 4.5rem;
+    }
+
+    .footerBody1 {
+        padding: 5rem 0 0 0;
+    }
+
+    .footerService {
+        padding-bottom: 4rem;
+    }
+
+    .partner {
+        padding-top: 10rem;
+    }
+
+    .partnerBody2 {
+        padding: 0rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-21 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid--2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid---2 {
+        display: grid;
+        grid-template-columns: 0.2fr 1fr;
+    }
+
+    .navBar {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1.5rem;
+    }
+
+    .logo img {
+        height: 4.3rem;
+        width: auto;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        background-color: white;
+        padding: 2rem 5rem;
+        margin: 2rem 2rem 0 0;
+    }
+
+    .menu li {
+        padding-bottom: 1.5rem;
+        margin-right: 2rem;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .Line1 {
+        padding-bottom: 1rem;
+    }
+
+    .line2 {
+        padding-bottom: 2rem;
+    }
+
+    .line3 {
+        padding-top: 2rem;
+        padding-bottom: 5rem;
+    }
+
+    .future {
+        padding: 6rem 2rem;
+    }
+
+    .futureBody {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .futureimg img {
+        display: flex;
+        justify-content: center;
+        height: 70rem;
+        width: auto;
+    }
+
+    .cards1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .threeCards {
+        padding: 2rem 3rem;
+    }
+
+    .line1 h3 {
+        padding-bottom: 2rem;
+    }
+
+    .line1 p {
+        padding-top: 2rem;
+    }
+
+    .para {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .image img {
+        margin-right: 3rem;
+    }
+
+    .line {
+        height: 2.5px;
+        width: 4.3rem;
+        background-color: #dddddd;
+    }
+
+    .lines {
+        height: 2.5px;
+        width: 4.3rem;
+        background-color: #0095ff;
+    }
+
+    .navBar {
+        padding: 2rem 2rem;
+    }
+
+}
+
+
+/* /Medium devices (tablets, upto 768px and above)/ */
+@media (width >=577px) and (width <=768px) {
+
+    .grid-1,
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .heroContainer {
+        padding: 9rem 0rem;
+    }
+
+    .heroText {
+        padding-right: 0rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .customerBody {
+        gap: 0rem;
+        padding: 0 2rem;
+    }
+
+    .customerTextCol h6 {
+        letter-spacing: 0.05rem;
+        font-weight: 400;
+    }
+
+    .customerTextCol p {
+        letter-spacing: 0.05rem;
+        font-weight: 400;
+    }
+
+    .footerLogo {
+        padding-bottom: 4.5rem;
+    }
+
+    .footerBody1 {
+        padding: 5rem 0 0 0;
+    }
+
+    .footerService {
+        padding-bottom: 4rem;
+    }
+
+    .partner {
+        padding-top: 10rem;
+    }
+
+    .partnerBody2 {
+        padding: 0rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+
+    .grid-21 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid--2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid---2 {
+        display: grid;
+        grid-template-columns: 0.2fr 1fr;
+    }
+
+    .navBar {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1.5rem;
+    }
+
+    .logo img {
+        height: 4.3rem;
+        width: auto;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        background-color: white;
+        padding: 2rem 5rem;
+        margin: 2rem 2rem 0 0;
+    }
+
+    .menu li {
+        padding-bottom: 1.5rem;
+        margin-right: 2rem;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .Line1 {
+        padding-bottom: 0.5rem;
+    }
+
+    .line2 {
+        padding-bottom: 2rem;
+    }
+
+    .line3 {
+        padding-top: 2rem;
+        padding-bottom: 5rem;
+    }
+
+    .future {
+        padding: 0;
+        padding: 2rem;
+    }
+
+    .futureBody {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .futureimg img {
+        display: flex;
+        justify-content: center;
+        height: 110rem;
+        width: auto;
+    }
+
+    .threeCards {
+        display: flex;
+        padding: 3rem 2rem;
+    }
+
+    .line1 h3 {
+        padding-bottom: 2rem;
+    }
+
+    .line1 p {
+        padding-top: 2rem;
+    }
+
+    .para {
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+    }
+
+    .image img {
+        margin-right: 3rem;
+    }
+
+    .line {
+        height: 2.5px;
+        width: 4.3rem;
+        background-color: #dddddd;
+    }
+
+    .lines {
+        height: 2.5px;
+        width: 4.3rem;
+        background-color: #0095ff;
+    }
+    .navBar {
+        padding: 2rem;
+    }
+}
+
+/*Large devices (Laptops, upto 992px and above) */
+@media (width >=769px) and (width <=992px) {
+    .grid-4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .heroContainer {
+        padding: 10rem 0rem;
+    }
+
+    .heroText {
+        padding-right: 0rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .customerBody {
+        gap: 3rem;
+        padding: 0 3rem;
+    }
+
+    .customerTextCol h6 {
+        letter-spacing: 0.05rem;
+        font-weight: 400;
+    }
+
+    .customerTextCol p {
+        letter-spacing: 0.05rem;
+        font-weight: 400;
+    }
+
+    .customerImageCol i {
+        top: 20%;
+        left: 43%;
+    }
+
+    .footerBody1 {
+        padding: 8rem 10rem 5rem 10rem;
+    }
+
+    .footerService {
+        padding-bottom: 4rem;
+    }
+    
+    .grid-2 {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .grid--2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+   .grid---2 {
+      display: grid;
+      grid-template-columns: 0.2fr 1fr;
+    }
+    .navBar{
+        display:flex;
+        justify-content: space-between;
+        padding:2rem;
+    }
+    .logo img{
+        height:4.3rem;
+        width:auto;
+    }
+    .menu {
+        display: none;
+        flex-direction:column;
+        position: absolute;
+        right: 0;
+        background-color:white;
+        padding: 2rem 5rem;
+        margin:2rem 2rem 0 0;
+    }
+    .menu li{
+        padding-bottom:1.5rem;
+        margin-right:2rem;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .menu.active {
+        display: flex;
+    }
+    .Line1{
+        padding-bottom:0;
+    }
+   .line2{
+        padding-bottom:2rem;
+    }
+   .line3{
+       padding-top:2rem;
+       padding-bottom:4rem;
+    }
+   .future{
+    padding:0;
+    padding:2rem;
+    }
+   .futureBody{
+        display: flex;
+        flex-direction: column;
+   }
+   .futureimg img{
+       display: flex;
+       justify-content:center;
+       height:115rem;
+       width:auto;
+   }
+   .threeCards{
+       display: flex;
+       padding:2rem; 
+   }
+   .line1 h3{
+        padding-bottom:2rem;
+    }
+    .line1 p{
+       padding-top:2rem;
+    }
+    .para{
+       padding-top:0;
+       padding-bottom:0;
+    }
+    .image img{
+       margin-right:2rem;
+    }
+    .line{
+       height:2.5px;
+       width:4.3rem;
+       background-color:#dddddd;       
+   }
+   .lines{
+       height:2.5px;
+       width:4.3rem;
+       background-color:#0095ff;       
+   } 
+    .serviceBody3{
+        display:grid;
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+
+/* X-Large devices (large desktops, upto 1200px and above)  */
+@media (width >=993px) and (width <=1200px) {
+    .heroContainer {
+        padding: 10rem 0rem;
+    }
+
+    .heroText {
+        padding-right: 0rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .grid-2 {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+    }
+    .grid--2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+   .grid---2 {
+      display: grid;
+      grid-template-columns: 0.2fr 1fr;
+    }
+    .navBar{
+        display:flex;
+        justify-content: space-between;
+        padding:2rem;
+    }
+    .logo img{
+        height:4.3rem;
+        width:auto;
+    }
+    .menu {
+        display: none;
+        flex-direction:column;
+        position: absolute;
+        right: 0;
+        background-color:white;
+        padding: 2rem 5rem;
+        margin:2rem 2rem 0 0;
+    }
+    .menu li{
+        padding-bottom:1.5rem;
+        margin-right:2rem;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .menu.active {
+        display: flex;
+    }
+    
+    .Line1{
+        padding-bottom:0;
+    }
+   .line2{
+        padding-bottom:2rem;
+    }
+   .line3{
+       padding-top:2rem;
+       padding-bottom:4rem;
+    }
+   .future{
+    padding:0;
+    padding:2rem;
+    }
+   
+   .futureimg img{
+       display: flex;
+       justify-content:center;
+       height:50rem;
+       width:auto;
+   }
+   .threeCards{
+       display: flex;
+       padding:2rem; 
+   }
+   .line1 h3{
+        padding-bottom:2rem;
+    }
+    .line1 p{
+       padding-top:2rem;
+    }
+    .para{
+       padding-top:0;
+       padding-bottom:0;
+    }
+    .image img{
+       margin-right:2rem;
+    }
+    .line{
+       height:2.5px;
+       width:4.3rem;
+       background-color:#dddddd;       
+   }
+   .lines{
+       height:2.5px;
+       width:4.3rem;
+       background-color:#0095ff;       
+   }   
+   .serviceBody3{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+}
+}
+
+/* XX-Large devices (larger desktops, upto 1400px and above)  */
+@media (width >=1200px) {}
